@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llItemInfoProduct"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#A11111"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/tvItemInfoProductKey"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="CPU" />
+
+    <TextView
+        android:id="@+id/tvInfoProductValue"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="DDR4 8GB 3200MHZ, 2 slot up to 16 GB" />
+</LinearLayout>

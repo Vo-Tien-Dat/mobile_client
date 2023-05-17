@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_payment_voucher"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Khuyến mãi"
+        android:textColor="@color/black"
+        android:textSize="28dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/middle_grey" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/border_radius_4dp"
+            android:drawableLeft="@drawable/ic_ticket"
+            android:drawablePadding="4dp"
+            android:drawableTint="@color/primary_blue"
+            android:hint="Nhập mã khuyến mãi"
+            android:textColor="@color/black" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/middle_grey"
+            android:text="Áp dụng" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="6dp"
+        android:background="@color/middle_grey" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listItemPaymentVoucher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="6dp" />
+
+</LinearLayout>

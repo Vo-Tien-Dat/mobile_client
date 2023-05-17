@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="4dp">
+
+    <LinearLayout
+        android:layout_margin="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/border_radius_4dp"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_ticket"
+            app:tint="@color/primary_blue" />
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNameVoucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Giảm giá 10%"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvNumberVoucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Số lượng: 12"
+                android:textColor="@color/middle_grey" />
+
+            <TextView
+                android:id="@+id/tvHanSuDung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HSD: 29/03/2023"
+                android:textColor="@color/middle_grey" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_sad" />
+
+            <TextView
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mua sắm vui vẻ" />
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

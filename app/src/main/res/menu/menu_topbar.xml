@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_search_light"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="Search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+    <item
+        android:id="@+id/menu_notification"
+        android:icon="@drawable/ic_bell"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="Thong bao"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+    <item
+        android:id="@+id/menu_chat"
+        android:icon="@drawable/ic_message"
+        app:showAsAction="ifRoom|collapseActionView"
+        android:title="Tin nhan"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"/>
+</menu>
